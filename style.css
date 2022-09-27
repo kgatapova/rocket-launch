@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.space {
+    background-image: url("media/space.png");
+    height: 100vh;
+    width: 80vw;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.planet-area {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+
+.planet {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 35vw;
+    height: 50vh;
+}
+
+.rocket {
+    position: absolute;
+    height: 20vh;
+    left: 20vw;
+    bottom: 25vh;
+    transform: rotate(30deg);
+}
+
+input[type=range] {
+    -webkit-appearance: slider-vertical;
+    width: 15%;
+}
+
+.control-panel {
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #131313 linear-gradient(27deg, #151515 5px, transparent 5px) linear-gradient(207deg, #151515 5px, transparent 5px) linear-gradient(27deg, #222 5px, transparent 5px) linear-gradient(207deg, #222 5px, transparent 5px) linear-gradient(90deg, #1b1b1b 10px, transparent 10px) linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424) 0 5px 10px 0px 0px 10px 10px 5px;
+    background-size: 20px 20px;
+}
+
+.control-panel__inner {
+    height: 90%;
+    width: 90%;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.check-buttons {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.levers {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="password"] {
+    border: yellow 2px solid;
+    color: red;
+}
+
+input[type="password"]::placeholder {
+    color: red;
+}
+
+input[value="ok"] {
+    background-color: yellow;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+}
+
+input[value="launch"] {
+    width: 60px;
+    height: 20px;
+    background: red;
+    border-radius: 20px / 10px;
+    border: yellow 2px solid;
+}
